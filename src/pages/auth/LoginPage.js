@@ -3,7 +3,7 @@ import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "https://api-eventos-445r.onrender.com/auth/login";
+const API_URL = "https://api-eventos-445r.onrender.com/api/auth/login";
 
 const LoginPage = () => {
   const { login } = useContext(AuthContext);
@@ -23,7 +23,6 @@ const LoginPage = () => {
       const { token, user } = res.data;
       login(user, token); // actualiza contexto global
 
-      // Redirección automática según el rol
       if (user.role === "admin") {
         navigate("/dashboard/usuarios");
       } else if (user.role === "empresa") {
