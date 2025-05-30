@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_REGISTRO_EVENTO_URL = "http://localhost:3000/api/registro-evento";
+const API_REGISTRO_EVENTO_URL =
+  "https://api-eventos-445r.onrender.com/api/registro-evento";
 
 const RegistroEventosPage = () => {
   const [registros, setRegistros] = useState([]);

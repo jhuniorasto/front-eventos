@@ -3,7 +3,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthContext";
 
-const API_EVENTOS_URL = "http://localhost:3000/api/eventos";
+const API_EVENTOS_URL = "https://api-eventos-445r.onrender.com/api/eventos";
 
 const EventosEmpresaPage = () => {
   const { user, token } = useContext(AuthContext);

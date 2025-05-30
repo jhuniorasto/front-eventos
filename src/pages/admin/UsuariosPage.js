@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/users";
-const API_AUTH = "http://localhost:3000/api/auth";
+const API_URL = "https://api-eventos-445r.onrender.com/api/users";
+const API_AUTH = "https://api-eventos-445r.onrender.com/api/auth";
 
 const UsuariosPage = () => {
   const [usuarios, setUsuarios] = useState([]);

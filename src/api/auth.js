@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_AUTH_URL = "http://localhost:3000/api/auth";
+const API_AUTH_URL = "https://api-eventos-445r.onrender.com/api/auth";
 
 export const login = (correo, contraseña) => {
   return axios.post(`${API_AUTH_URL}/login`, { correo, contraseña });

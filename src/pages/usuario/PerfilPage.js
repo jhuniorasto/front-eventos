@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
 
-const API_USERS_URL = "http://localhost:3000/api/users";
+const API_USERS_URL = "https://api-eventos-445r.onrender.com/api/users";
 
 const PerfilPage = () => {
   const { user, token, login } = useContext(AuthContext);

@@ -2,8 +2,9 @@ import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../../contexts/AuthContext";
 
-const API_EVENTO_URL = "http://localhost:3000/api/eventos";
-const API_REGISTER_URL = "http://localhost:3000/api/registro-evento";
+const API_EVENTO_URL = "https://api-eventos-445r.onrender.com/api/eventos";
+const API_REGISTER_URL =
+  "https://api-eventos-445r.onrender.com/api/registro-evento";
 
 const RegistrarEventoPage = () => {
   const { token, user } = useContext(AuthContext);
